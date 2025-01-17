@@ -3,21 +3,24 @@ import phone from '../../src/assets/Group9.png';
 
 const Main = () => {
     return (
-        <div className="flex justify-between items-center min-h-screen text-white container mx-auto px-28">
-            <div className="flex flex-col gap-4 max-w-lg">
-                <h1 className="text-5xl font-bold leading-none">
+        <div className="md:flex flex-wrap justify-center gap-12 items-center md:min-h-screen text-white  md:mx-15 mx-4  md:px-28">
+            <div className="flex flex-col gap-4 max-w-xl    ">
+                <h1 className="md:text-[53px] text-[28px] font-semibold leading-tight ">
                     <span >
                         Secure Your Digital Identity
                     </span>
-                    <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">  with Our Web3 DID Wallet </span>
+                    <span className="grident">  with Our Web3 DID Wallet </span>
                 </h1>
+                <div className='md:flex flex-warp'>
 
-                <p className='text-sm'>
+
+                <p className='text-xs font-normal md:w-[350px] w-[250px] '>
                     The only noichain public addresses with a single username, secured by your device, and powered by your Universal Multichain identity.
                 </p>
+                </div>
             </div>
 
-            <div className='lg:w-[356px] mt-2'>
+            <div className='md:w-[360px] w-[250px] mt-2'>
                 <img src={phone} alt="Phone preview" className="max-w-full h-auto" />
             </div>
         </div>
